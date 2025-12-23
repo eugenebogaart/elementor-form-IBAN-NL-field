@@ -1,4 +1,4 @@
-# IBAN Nummber field for Wordpress Elementor Forms
+# IBAN Number field for Wordpress Elementor Forms
 
 An extension of a standard form TextField that certifies the input of a valid Dutch bank account number.
 Bank accounts part of SEPA are also called IBAN numbers. 
