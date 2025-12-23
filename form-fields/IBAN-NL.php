@@ -149,7 +149,11 @@ class Elementor_IBAN_NL_Field extends \ElementorPro\Modules\Forms\Fields\Field_B
 		$country = iban_get_country_part($iban);
 
 		// error_log("Verifying IBAN nummer, country" . $country ); 
+		if ($country != 'NL') {
+			return false;
+		}
 
+	
 		# Test length of IBAN
 		if(strlen($iban)!=iban_country_get_iban_length($country)) { 
 			// error_log("Verifying IBAN nummer, length incorrect" ); 
