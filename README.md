@@ -4,10 +4,15 @@ An extension of a standard form TextField that certifies the input of a valid Du
 Bank accounts part of SEPA are also called IBAN numbers. 
 More about IBAN number format in PHP, see GIT Repo: https://github.com/globalcitizen/php-iban.git
 
-The Field has a placeholder for a readable IBAN nummber with spaces
-The Field has a regexp pattern to match the format before submit
+The Field has a placeholder for a readable IBAN nummber with spaces.
+The Field has a regexp pattern to match the format before submit.
 The Field validator calls library of the above GIT Repo. 
 
 The top level function $verify_iban has been modified slightly, to ensure the number is from a valid Dutch bank.
 Actually this check also happens in the function $validate by enforcing the regexp pattern.
 
+## Install
+
+- git clone https://github.com/eugenebogaart/elementor-form-IBAN-NL-field
+- cd elementor-form-IBAN-NL-field ; mkdir libraries; cd libraries 
+- git clone https://github.com/globalcitizen/php-iban.git
